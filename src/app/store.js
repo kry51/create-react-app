@@ -17,7 +17,8 @@ export const store = configureStore({
       campsites: campsitesReducer,
       comments: commentsReducer,
       partners: partnersReducer,
-      promotions: promotionsReducer
+      promotions: promotionsReducer,
+      user: userReducer
   },
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat([logger])
 });
